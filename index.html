@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sophia Coffee | صوفيا</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Tahoma,Arial,sans-serif;background:#120d09;color:#fff;line-height:1.7}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;right:0;left:0;z-index:10;padding:16px 5%;display:flex;align-items:center;justify-content:space-between;background:rgba(18,13,9,.78);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{font-size:25px;font-weight:800;color:#e6c08b}.logo span{display:block;font-size:12px;color:#fff;letter-spacing:3px;text-align:center}
+.links{display:flex;gap:10px;flex-wrap:wrap}.links a{padding:9px 14px;border-radius:22px;color:#eee;font-size:14px}.links a:hover{background:#e6c08b;color:#1b110b}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 7% 70px;position:relative;overflow:hidden;background:
+radial-gradient(circle at 75% 35%,rgba(202,145,76,.32),transparent 25%),
+radial-gradient(circle at 20% 80%,rgba(114,66,32,.25),transparent 28%),
+linear-gradient(135deg,#1b100b,#090706 70%)}
+.hero:after{content:"";position:absolute;width:430px;height:430px;border-radius:50%;left:-160px;bottom:-180px;background:rgba(215,165,101,.08);box-shadow:0 0 100px rgba(215,165,101,.12)}
+.hero-content{max-width:700px;position:relative;z-index:2}
+.badge{display:inline-block;padding:7px 15px;border:1px solid rgba(230,192,139,.45);border-radius:30px;color:#e6c08b;margin-bottom:22px;font-size:14px}
+h1{font-size:clamp(48px,8vw,88px);line-height:1.05;margin-bottom:18px}.gold{color:#e6c08b}
+.subtitle{font-size:21px;color:#d8d0ca;max-width:600px;margin-bottom:30px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:13px 24px;border-radius:30px;font-weight:bold;border:1px solid #e6c08b}.primary{background:#e6c08b;color:#17100b}.secondary{color:#fff}
+.cup{position:absolute;left:8%;top:22%;font-size:210px;filter:drop-shadow(0 20px 40px #000);opacity:.9;transform:rotate(-8deg)}
+section{padding:90px 7%}.section-title{text-align:center;margin-bottom:45px}.section-title h2{font-size:38px}.section-title p{color:#aaa}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1100px;margin:auto}
+.card{background:linear-gradient(145deg,#21150f,#15100d);padding:28px;border:1px solid rgba(230,192,139,.14);border-radius:22px;transition:.3s}.card:hover{transform:translateY(-7px);border-color:#e6c08b}
+.icon{font-size:38px;margin-bottom:12px}.card h3{margin-bottom:8px;color:#e6c08b}.card p{color:#bbb}
+.menu-preview{background:#0d0907}.menu{max-width:900px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:14px}.item{display:flex;justify-content:space-between;padding:17px 20px;border-radius:14px;background:#1b120d;border:1px solid rgba(255,255,255,.06)}.price{color:#e6c08b;font-weight:bold}
+.contact{background:linear-gradient(135deg,#1d120c,#0c0806)}.contact-box{max-width:900px;margin:auto;text-align:center;padding:45px;border-radius:28px;border:1px solid rgba(230,192,139,.2);background:rgba(255,255,255,.03)}.phone{font-size:30px;color:#e6c08b;margin:18px}
+footer{text-align:center;padding:25px;color:#8f8883;border-top:1px solid rgba(255,255,255,.07)}
+@media(max-width:800px){nav{padding:12px 4%}.links{display:none}.hero{padding-right:6%;padding-left:6%}.cup{opacity:.12;left:5%;top:30%}.cards,.menu{grid-template-columns:1fr}section{padding:70px 6%}.subtitle{font-size:18px}h1{font-size:55px}}
+
+.all-menu{max-width:1050px;margin:auto}
+.menu-category{margin-bottom:34px}
+.menu-category h3{font-size:25px;color:#e6c08b;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(230,192,139,.25)}
+.full-menu{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.full-item{display:flex;justify-content:space-between;align-items:center;padding:14px 17px;border-radius:13px;background:#1b120d;border:1px solid rgba(255,255,255,.06)}
+.full-item:hover{border-color:#e6c08b;transform:translateY(-2px)}
+@media(max-width:800px){.full-menu{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="#home">صوفيا<span>SOPHIA COFFEE</span></a>
+  <div class="links">
+    <a href="#home">الرئيسية</a>
+    <a href="#about">عن صوفيا</a>
+    <a href="#menu">المنيو</a>
+    <a href="#contact">تواصل معنا</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-content">
+    <div class="badge">☕ Coffee • Dessert • Good Mood</div>
+    <h1>صوفيا<br><span class="gold">Sophia Coffee</span></h1>
+    <p class="subtitle">صوفيا.. المكان اللي قهوتك فيه ليها حكاية ☕🤎</p>
+    <div class="buttons">
+      <a class="btn primary" href="#menu">شوف المنيو</a>
+      <a class="btn secondary" href="#contact">تواصل معنا</a>
+    </div>
+  </div>
+  <div class="cup">☕</div>
+</header>
+
+<section id="about">
+  <div class="section-title"><h2>ليه <span class="gold">Sophia Coffee</span>؟</h2><p>مش مجرد قهوة.. دي تجربة كاملة.</p></div>
+  <div class="cards">
+    <div class="card"><div class="icon">☕</div><h3>قهوة على مزاجك</h3><p>اختيارات متنوعة من القهوة الكلاسيكية والمشروبات المميزة.</p></div>
+    <div class="card"><div class="icon">🍰</div><h3>حاجة حلوة</h3><p>حلويات ومشروبات تخلي قعدتك أحلى.</p></div>
+    <div class="card"><div class="icon">🤎</div><h3>مود مختلف</h3><p>مكان مناسب للقعدة الحلوة، الكلام، والشغل والروقان.</p></div>
+  </div>
+</section>
+
+<section class="menu-preview" id="menu">
+  <div class="section-title"><h2>منيو <span class="gold">Sophia Coffee</span></h2><p>كل اختياراتنا وأسعارنا في مكان واحد.</p></div>
+  <div class="all-menu">
+    <div class="menu-category"><h3>قهوة تركي</h3><div class="full-menu"><div class="full-item"><span>سنجل</span><span class="price">30 ج</span></div><div class="full-item"><span>دبل</span><span class="price">35 ج</span></div><div class="full-item"><span>سِك (سينجل)</span><span class="price">35 ج</span></div><div class="full-item"><span>سِك (دبل)</span><span class="price">40 ج</span></div><div class="full-item"><span>قهوة بحليب</span><span class="price">35 ج</span></div><div class="full-item"><span>بندق</span><span class="price">35 ج</span></div><div class="full-item"><span>نوتيلا</span><span class="price">45 ج</span></div><div class="full-item"><span>لوتس</span><span class="price">45 ج</span></div><div class="full-item"><span>سينابون</span><span class="price">45 ج</span></div><div class="full-item"><span>سبيشيال</span><span class="price">55 ج</span></div></div></div>
+<div class="menu-category"><h3>Espresso</h3><div class="full-menu"><div class="full-item"><span>سنجل</span><span class="price">40 ج</span></div><div class="full-item"><span>دبل</span><span class="price">45 ج</span></div><div class="full-item"><span>رومانو</span><span class="price">45 ج</span></div><div class="full-item"><span>كون بانا</span><span class="price">55 ج</span></div><div class="full-item"><span>شيد</span><span class="price">50 ج</span></div><div class="full-item"><span>سِك</span><span class="price">40 ج</span></div><div class="full-item"><span>أفوجاتو</span><span class="price">45 ج</span></div><div class="full-item"><span>ماكياتو سنجل</span><span class="price">45 ج</span></div><div class="full-item"><span>ماكياتو دبل</span><span class="price">55 ج</span></div><div class="full-item"><span>أفوجاتو سبيشيال</span><span class="price">55 ج</span></div><div class="full-item"><span>كولد برو</span><span class="price">60 ج</span></div><div class="full-item"><span>آيس إسبريسو</span><span class="price">45 ج</span></div><div class="full-item"><span>آيس إسبريسو سبيشيال</span><span class="price">55 ج</span></div></div></div>
+<div class="menu-category"><h3>Ice Coffee</h3><div class="full-menu"><div class="full-item"><span>لاتيه</span><span class="price">50 ج</span></div><div class="full-item"><span>كابتشينو</span><span class="price">55 ج</span></div><div class="full-item"><span>وايت موكا</span><span class="price">70 ج</span></div><div class="full-item"><span>كراميل ماكياتو</span><span class="price">70 ج</span></div><div class="full-item"><span>سبانيش لاتيه</span><span class="price">60 ج</span></div><div class="full-item"><span>كراميل لاتيه</span><span class="price">60 ج</span></div><div class="full-item"><span>فستق لاتيه</span><span class="price">65 ج</span></div><div class="full-item"><span>لوتس لاتيه</span><span class="price">60 ج</span></div><div class="full-item"><span>دارك موكا</span><span class="price">65 ج</span></div><div class="full-item"><span>نوتيلا موكا</span><span class="price">70 ج</span></div><div class="full-item"><span>آيس شوكليت</span><span class="price">50 ج</span></div></div></div>
+<div class="menu-category"><h3>Mojito</h3><div class="full-menu"><div class="full-item"><span>فراولة</span><span class="price">55 ج</span></div><div class="full-item"><span>بطيخ</span><span class="price">55 ج</span></div><div class="full-item"><span>بلو بيري</span><span class="price">55 ج</span></div><div class="full-item"><span>خوخ</span><span class="price">55 ج</span></div><div class="full-item"><span>أناناس</span><span class="price">60 ج</span></div><div class="full-item"><span>جوز هند</span><span class="price">60 ج</span></div><div class="full-item"><span>فانيليا</span><span class="price">55 ج</span></div><div class="full-item"><span>نعناع</span><span class="price">55 ج</span></div></div></div>
+<div class="menu-category"><h3>Specialty</h3><div class="full-menu"><div class="full-item"><span>V60</span><span class="price">50 ج</span></div><div class="full-item"><span>Chemex</span><span class="price">50 ج</span></div><div class="full-item"><span>Mocha Bot</span><span class="price">50 ج</span></div><div class="full-item"><span>R.I.P</span><span class="price">60 ج</span></div></div></div>
+<div class="menu-category"><h3>Hot Coffee</h3><div class="full-menu"><div class="full-item"><span>لاتيه</span><span class="price">45 ج</span></div><div class="full-item"><span>كابتشينو</span><span class="price">50 ج</span></div><div class="full-item"><span>كورتادو</span><span class="price">45 ج</span></div><div class="full-item"><span>فلات وايت</span><span class="price">50 ج</span></div><div class="full-item"><span>سبانيش لاتيه</span><span class="price">55 ج</span></div><div class="full-item"><span>وايت موكا</span><span class="price">65 ج</span></div><div class="full-item"><span>دارك موكا</span><span class="price">60 ج</span></div><div class="full-item"><span>فلات موكا</span><span class="price">55 ج</span></div><div class="full-item"><span>كراميل ماكياتو</span><span class="price">65 ج</span></div><div class="full-item"><span>Cafe Au Lait</span><span class="price">40 ج</span></div><div class="full-item"><span>هوت شوكليت</span><span class="price">45 ج</span></div><div class="full-item"><span>كراميل لاتيه</span><span class="price">55 ج</span></div><div class="full-item"><span>فستق لاتيه</span><span class="price">60 ج</span></div><div class="full-item"><span>لوتس لاتيه</span><span class="price">55 ج</span></div><div class="full-item"><span>كابتشينو فانيليا</span><span class="price">65 ج</span></div></div></div>
+<div class="menu-category"><h3>Frappe</h3><div class="full-menu"><div class="full-item"><span>دارك شوكليت</span><span class="price">70 ج</span></div><div class="full-item"><span>نوتيلا</span><span class="price">70 ج</span></div><div class="full-item"><span>كراميل</span><span class="price">70 ج</span></div><div class="full-item"><span>فستق</span><span class="price">75 ج</span></div><div class="full-item"><span>فانيليا</span><span class="price">65 ج</span></div><div class="full-item"><span>لوتس</span><span class="price">75 ج</span></div><div class="full-item"><span>وايت موكا</span><span class="price">75 ج</span></div><div class="full-item"><span>بلاك موكا</span><span class="price">65 ج</span></div></div></div>
+<div class="menu-category"><h3>Fresh Juice & Smoothies</h3><div class="full-menu"><div class="full-item"><span>مانجو</span><span class="price">50 ج</span></div><div class="full-item"><span>فراولة</span><span class="price">50 ج</span></div><div class="full-item"><span>موز</span><span class="price">50 ج</span></div><div class="full-item"><span>بطيخ</span><span class="price">50 ج</span></div><div class="full-item"><span>خوخ</span><span class="price">50 ج</span></div><div class="full-item"><span>ليمون نعناع</span><span class="price">45 ج</span></div><div class="full-item"><span>جوافة</span><span class="price">50 ج</span></div><div class="full-item"><span>تفاح</span><span class="price">50 ج</span></div><div class="full-item"><span>ليمون</span><span class="price">40 ج</span></div><div class="full-item"><span>أناناس</span><span class="price">60 ج</span></div><div class="full-item"><span>بينا كولادا</span><span class="price">60 ج</span></div><div class="full-item"><span>أفوجاتو</span><span class="price">100 ج</span></div><div class="full-item"><span>كيوي</span><span class="price">60 ج</span></div><div class="full-item"><span>سبيشيال</span><span class="price">75 ج</span></div></div></div>
+<div class="menu-category"><h3>Soft</h3><div class="full-menu"><div class="full-item"><span>Double Dare</span><span class="price">30 ج</span></div><div class="full-item"><span>V Cola</span><span class="price">30 ج</span></div><div class="full-item"><span>مياه</span><span class="price">10 ج</span></div></div></div>
+<div class="menu-category"><h3>Natural Herbs</h3><div class="full-menu"><div class="full-item"><span>شاي</span><span class="price">15 ج</span></div><div class="full-item"><span>شاي بلبن</span><span class="price">30 ج</span></div><div class="full-item"><span>أعشاب طبيعية</span><span class="price">20 ج</span></div><div class="full-item"><span>كركديه</span><span class="price">20 ج</span></div><div class="full-item"><span>ميكس أعشاب</span><span class="price">25 ج</span></div><div class="full-item"><span>هوت سيدر</span><span class="price">30 ج</span></div></div></div>
+<div class="menu-category"><h3>Milk Shake</h3><div class="full-menu"><div class="full-item"><span>فانيليا</span><span class="price">55 ج</span></div><div class="full-item"><span>كراميل</span><span class="price">55 ج</span></div><div class="full-item"><span>دارك شوكليت</span><span class="price">55 ج</span></div><div class="full-item"><span>بلو بيري</span><span class="price">50 ج</span></div><div class="full-item"><span>فراولة</span><span class="price">50 ج</span></div><div class="full-item"><span>نوتيلا</span><span class="price">60 ج</span></div><div class="full-item"><span>لوتس</span><span class="price">65 ج</span></div><div class="full-item"><span>فستق</span><span class="price">65 ج</span></div><div class="full-item"><span>مولتن</span><span class="price">70 ج</span></div><div class="full-item"><span>بندق</span><span class="price">60 ج</span></div><div class="full-item"><span>Borio</span><span class="price">60 ج</span></div><div class="full-item"><span>أفوجاتو</span><span class="price">120 ج</span></div><div class="full-item"><span>سبيشيال</span><span class="price">75 ج</span></div></div></div>
+<div class="menu-category"><h3>Dessert</h3><div class="full-menu"><div class="full-item"><span>كيكة العسل</span><span class="price">50 ج</span></div><div class="full-item"><span>تشيز كيك</span><span class="price">50 ج</span></div><div class="full-item"><span>إنجلش كيك</span><span class="price">25 ج</span></div><div class="full-item"><span>وافل</span><span class="price">45 ج</span></div><div class="full-item"><span>مولتن كيك</span><span class="price">50 ج</span></div><div class="full-item"><span>مولتن كيك نوتيلا</span><span class="price">60 ج</span></div></div></div>
+<div class="menu-category"><h3>Sandwich</h3><div class="full-menu"><div class="full-item"><span>جبنة</span><span class="price">20 ج</span></div><div class="full-item"><span>ميكس جبن</span><span class="price">30 ج</span></div><div class="full-item"><span>ميكس</span><span class="price">25 ج</span></div></div></div>
+<div class="menu-category"><h3>Ice Cream</h3><div class="full-menu"><div class="full-item"><span>2 بولا</span><span class="price">25 ج</span></div><div class="full-item"><span>ميكس</span><span class="price">35 ج</span></div></div></div>
+<div class="menu-category"><h3>Extra</h3><div class="full-menu"><div class="full-item"><span>كراميل</span><span class="price">10 ج</span></div><div class="full-item"><span>لوتس</span><span class="price">15 ج</span></div><div class="full-item"><span>فانيليا</span><span class="price">10 ج</span></div><div class="full-item"><span>بلو بيري</span><span class="price">10 ج</span></div><div class="full-item"><span>نوتيلا</span><span class="price">15 ج</span></div><div class="full-item"><span>آيس كريم</span><span class="price">15 ج</span></div><div class="full-item"><span>Passion Fruit</span><span class="price">20 ج</span></div><div class="full-item"><span>Whipped Cream</span><span class="price">20 ج</span></div><div class="full-item"><span>فستق</span><span class="price">15 ج</span></div><div class="full-item"><span>نعناع</span><span class="price">10 ج</span></div></div></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="contact-box">
+    <div class="section-title" style="margin-bottom:15px"><h2>زور <span class="gold">Sophia Coffee</span></h2><p>قويسنا - الشارع العمومي</p></div>
+    <div class="phone">01002993385</div>
+    <div class="buttons" style="justify-content:center">
+      <a class="btn primary" href="https://wa.me/201002993385" target="_blank">واتساب 💬</a>
+      <a class="btn secondary" href="tel:01002993385">اتصال 📞</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 Sophia Coffee — صوفيا</div>
+  <div style="margin-top:14px;color:#e6c08b;font-size:18px;font-weight:bold;">This website was created by</div>
+  <div style="margin-top:6px;color:#fff;">Eng / Sameh Ahmed</div>
+  <div style="margin-top:4px;color:#bbb;">Phone / 01500162897</div>
+  <div style="margin-top:4px;color:#bbb;">WhatsApp / 01500162897</div>
+  <a href="https://wa.me/201500162897" target="_blank" style="display:inline-block;margin-top:16px;padding:11px 22px;border-radius:25px;background:#e6c08b;color:#17100b;font-weight:bold;">Open WhatsApp 💬</a>
+</footer>
+</body>
+</html>
